@@ -5,25 +5,20 @@ Shape::Shape(QWidget *parent) : QWidget(parent), penWidth(1), penColor(Qt::black
     setMinimumSize(500, 500);
 }
 
-void Shape::setShape(Shape::ShapeType shape) {
+Shape::~Shape()
+{
+    qDebug() << "Shape Destructor";
+}
+
+
+void Shape::setProperties(Shape::ShapeType shape, int width, const QColor &penCol, const QColor &brushCol) {
     currentShape = shape;
-    update();
-}
-
-void Shape::setPenWidth(int width) {
     penWidth = width;
+    penColor = penCol;
+    brushColor = brushCol;
     update();
 }
 
-void Shape::setPenColor(const QColor &color) {
-    penColor = color;
-    update();
-}
-
-void Shape::setBrushColor(const QColor &color) {
-    brushColor = color;
-    update();
-}
 
 Shape::ShapeType Shape::currentShapeType() const
 {

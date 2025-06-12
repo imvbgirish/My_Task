@@ -13,15 +13,16 @@ class MainWindow : public QWidget {
 
 public:
     MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
 
 private slots:
-    void onShapeButtonClicked(Shape::ShapeType shape);
+    void onShapeSelected(Shape::ShapeType shape);
 
 private:
-    Shape *shapeArea;
-    QLineEdit *penWidthEdit;
-    QLineEdit *penColorEdit;
-    QLineEdit *brushColorEdit;
+    Shape *drawingArea;
+    QLineEdit *inputPenWidth;
+    QLineEdit *inputPenColor;
+    QLineEdit *inputBrushColor;
 };
 
 #endif // MAINWINDOW_H

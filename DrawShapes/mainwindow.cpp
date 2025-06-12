@@ -2,46 +2,43 @@
 #include <QLabel>
 
 MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
-    shapeArea = new Shape(this);
-    penWidthEdit = new QLineEdit("2", this);
-    penColorEdit = new QLineEdit("black", this);
-    brushColorEdit = new QLineEdit("yellow", this);
-
+    drawingArea = new Shape(this);
+    inputPenWidth = new QLineEdit("2", this);
+    inputPenColor = new QLineEdit("black", this);
+    inputBrushColor = new QLineEdit("yellow", this);
 
     QHBoxLayout *mainLayout = new QHBoxLayout(this);
 
-
     QVBoxLayout *shapeButtonsLayout = new QVBoxLayout();
-    QList<Shape::ShapeType> shapeTypes = {
+    QList<Shape::ShapeType> availableShapes = {
         Shape::Circle,
         Shape::Rectangle,
         Shape::Square,
         Shape::Pentagon,
     };
-    QStringList shapeNames = {"Circle", "Rectangle", "Square", "Pentagon"};
+    QStringList shapeLabels = {"Circle", "Rectangle", "Square", "Pentagon"};
 
-    for (int i = 0; i < shapeTypes.size(); ++i) {
-        QPushButton *button = new QPushButton(shapeNames[i], this);
-        shapeButtonsLayout->addWidget(button);
-        connect(button, &QPushButton::clicked, this, [=]() {
-            onShapeButtonClicked(shapeTypes[i]);
+    for (int i = 0; i < availableShapes.size(); ++i) {
+        QPushButton *btn = new QPushButton(shapeLabels[i], this);
+        shapeButtonsLayout->addWidget(btn);
+        connect(btn, &QPushButton::clicked, this, [=]() {
+            onShapeSelected(availableShapes[i]);
         });
     }
     shapeButtonsLayout->addStretch();
 
     QVBoxLayout *rightLayout = new QVBoxLayout();
 
-
     QHBoxLayout *controlsLayout = new QHBoxLayout();
     controlsLayout->addWidget(new QLabel("Pen Width:"));
-    controlsLayout->addWidget(penWidthEdit);
+    controlsLayout->addWidget(inputPenWidth);
     controlsLayout->addWidget(new QLabel("Pen Color:"));
-    controlsLayout->addWidget(penColorEdit);
+    controlsLayout->addWidget(inputPenColor);
     controlsLayout->addWidget(new QLabel("Brush Color:"));
-    controlsLayout->addWidget(brushColorEdit);
+    controlsLayout->addWidget(inputBrushColor);
 
     rightLayout->addLayout(controlsLayout);
-    rightLayout->addWidget(shapeArea, 1);
+    rightLayout->addWidget(drawingArea, 1);
 
     mainLayout->addLayout(shapeButtonsLayout);
     mainLayout->addLayout(rightLayout, 1);
@@ -49,10 +46,14 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
     setLayout(mainLayout);
 }
 
-void MainWindow::onShapeButtonClicked(Shape::ShapeType shape) {
-    shapeArea->setShape(shape);
-    shapeArea->setPenWidth(penWidthEdit->text().toInt());
-    shapeArea->setPenColor(QColor(penColorEdit->text()));
-    shapeArea->setBrushColor(QColor(brushColorEdit->text()));
-    shapeArea->update();
+MainWindow::~MainWindow() {
+    qDebug() << "MainWindow Destructor";
+}
+
+void MainWindow::onShapeSelected(Shape::ShapeType shape) {
+    int width = inputPenWidth->text().toInt();
+    QColor penCol(inputPenColor->text());
+    QColor brushCol(inputBrushColor->text());
+
+    drawingArea->setProperties(shape, width, penCol, brushCol);
 }

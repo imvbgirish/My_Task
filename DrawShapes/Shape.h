@@ -16,12 +16,9 @@ public:
     };
 
     explicit Shape(QWidget *parent = nullptr);
+    ~Shape();
 
-    void setShape(ShapeType shape);
-    void setPenWidth(int width);
-    void setPenColor(const QColor &color);
-    void setBrushColor(const QColor &color);
-
+    void setProperties(ShapeType shape, int width, const QColor &penCol, const QColor &brushCol);
     ShapeType currentShapeType() const;
 
 protected:

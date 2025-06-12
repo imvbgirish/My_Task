@@ -40,14 +40,14 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "MainWindow",
-        "onShapeButtonClicked",
+        "onShapeSelected",
         "",
         "Shape::ShapeType",
         "shape"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'onShapeButtonClicked'
+        // Slot 'onShapeSelected'
         QtMocHelpers::SlotData<void(Shape::ShapeType)>(1, 2, QMC::AccessPrivate, QMetaType::Void, {{
             { 0x80000000 | 3, 4 },
         }}),
@@ -74,7 +74,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     auto *_t = static_cast<MainWindow *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->onShapeButtonClicked((*reinterpret_cast< std::add_pointer_t<Shape::ShapeType>>(_a[1]))); break;
+        case 0: _t->onShapeSelected((*reinterpret_cast< std::add_pointer_t<Shape::ShapeType>>(_a[1]))); break;
         default: ;
         }
     }
