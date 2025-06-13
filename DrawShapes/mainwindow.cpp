@@ -2,10 +2,12 @@
 #include <QLabel>
 
 MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
+    qDebug() << Q_FUNC_INFO;
+
     drawingArea = new Shape(this);
-    inputPenWidth = new QLineEdit("2", this);
-    inputPenColor = new QLineEdit("black", this);
-    inputBrushColor = new QLineEdit("yellow", this);
+    inputPenWidth = new QLineEdit("3", this);
+    inputPenColor = new QLineEdit("White", this);
+    inputBrushColor = new QLineEdit("Black", this);
 
     QHBoxLayout *mainLayout = new QHBoxLayout(this);
 
@@ -51,6 +53,8 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::onShapeSelected(Shape::ShapeType shape) {
+    qDebug() << Q_FUNC_INFO;
+
     int width = inputPenWidth->text().toInt();
     QColor penCol(inputPenColor->text());
     QColor brushCol(inputBrushColor->text());

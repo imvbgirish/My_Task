@@ -1,8 +1,9 @@
 #include "Shape.h"
 #include <QPainter>
 
-Shape::Shape(QWidget *parent) : QWidget(parent), penWidth(1), penColor(Qt::black), brushColor(Qt::yellow) {
+Shape::Shape(QWidget *parent) : QWidget(parent), penWidth(1), penColor(Qt::white), brushColor(Qt::black) {
     setMinimumSize(500, 500);
+    qDebug() << Q_FUNC_INFO;
 }
 
 Shape::~Shape()
@@ -12,6 +13,8 @@ Shape::~Shape()
 
 
 void Shape::setProperties(Shape::ShapeType shape, int width, const QColor &penCol, const QColor &brushCol) {
+    qDebug() << Q_FUNC_INFO;
+
     currentShape = shape;
     penWidth = width;
     penColor = penCol;
@@ -22,11 +25,15 @@ void Shape::setProperties(Shape::ShapeType shape, int width, const QColor &penCo
 
 Shape::ShapeType Shape::currentShapeType() const
 {
+    qDebug() << Q_FUNC_INFO;
     return currentShape;
 }
 
 void Shape::paintEvent(QPaintEvent *)
 {
+
+    qDebug() << Q_FUNC_INFO;
+
     QPainter painter(this);
     painter.setPen(QPen(penColor, penWidth));
     painter.setBrush(QBrush(brushColor));

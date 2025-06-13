@@ -1052,8 +1052,8 @@ moc_Shape.cpp: ../../Shape.h \
 	/home/girish-v-b/Qt/6.9.0/gcc_64/libexec/moc $(DEFINES) --include /home/girish-v-b/CPP/Qt/DrawShapes/build/Desktop_Qt_6_9_0-Debug/moc_predefs.h -I/home/girish-v-b/Qt/6.9.0/gcc_64/mkspecs/linux-g++ -I/home/girish-v-b/CPP/Qt/DrawShapes -I/home/girish-v-b/Qt/6.9.0/gcc_64/include -I/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets -I/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui -I/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore -I. -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../Shape.h -o moc_Shape.cpp
 
 moc_mainwindow.cpp: ../../mainwindow.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QMainWindow \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qmainwindow.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QWidget \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qwidget.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtguiglobal.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qglobal.h \
@@ -1106,7 +1106,6 @@ moc_mainwindow.cpp: ../../mainwindow.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtguiexports.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtwidgets-config.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qwidget.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qwindowdefs.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qobjectdefs.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qnamespace.h \
@@ -1249,34 +1248,25 @@ moc_mainwindow.cpp: ../../mainwindow.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qinputmethod.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qlocale.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qguiapplication_platform.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtabwidget.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QLineEdit \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlineedit.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qframe.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextcursor.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextdocument.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextformat.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qpen.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextoption.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QPushButton \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qpushbutton.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QSpinBox \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qspinbox.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qvalidator.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qregularexpression.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QComboBox \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qcombobox.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qstyleoption.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qslider.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractslider.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qstyle.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtabbar.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qrubberband.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qframe.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qabstractitemmodel.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QLabel \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlabel.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qpicture.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextdocument.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QVBoxLayout \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qboxlayout.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlayout.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qgridlayout.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QHBoxLayout \
 		../../Shape.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QWidget \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/QPen \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qpen.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/QBrush \
 		moc_predefs.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/libexec/moc
@@ -1673,8 +1663,7 @@ main.o: ../../main.cpp /home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QAppli
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qlocale.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qguiapplication_platform.h \
 		../../mainwindow.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QMainWindow \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qmainwindow.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QWidget \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qwidget.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qaction.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qkeysequence.h \
@@ -1703,40 +1692,31 @@ main.o: ../../main.cpp /home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QAppli
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/QSizeF \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/QTransform \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qscreen_platform.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtabwidget.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QLineEdit \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlineedit.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qframe.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextcursor.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextdocument.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextformat.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qpen.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextoption.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QPushButton \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qpushbutton.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QSpinBox \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qspinbox.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qvalidator.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qregularexpression.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QComboBox \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qcombobox.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qstyleoption.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qslider.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractslider.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qstyle.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtabbar.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qrubberband.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qframe.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qabstractitemmodel.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QLabel \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlabel.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qpicture.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextdocument.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QVBoxLayout \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qboxlayout.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlayout.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qgridlayout.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QHBoxLayout \
 		../../Shape.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QWidget \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/QPen \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qpen.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/QBrush
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../../main.cpp
 
 mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QMainWindow \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qmainwindow.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QWidget \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qwidget.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtguiglobal.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qglobal.h \
@@ -1789,7 +1769,6 @@ mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtguiexports.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtwidgets-config.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qwidget.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qwindowdefs.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qobjectdefs.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qnamespace.h \
@@ -1932,42 +1911,29 @@ mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qinputmethod.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qlocale.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qguiapplication_platform.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtabwidget.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QLineEdit \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlineedit.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qframe.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextcursor.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextdocument.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextformat.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qpen.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextoption.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QPushButton \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qpushbutton.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QSpinBox \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qspinbox.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qvalidator.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qregularexpression.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QComboBox \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qcombobox.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qstyleoption.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qslider.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qabstractslider.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qstyle.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qtabbar.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qrubberband.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qframe.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtCore/qabstractitemmodel.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QLabel \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlabel.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qpicture.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qtextdocument.h \
-		../../Shape.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QWidget \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/QPen \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qpen.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/QBrush \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QHBoxLayout \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QVBoxLayout \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qboxlayout.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlayout.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlayoutitem.h \
 		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qgridlayout.h \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QVBoxLayout \
-		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QSpacerItem
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QHBoxLayout \
+		../../Shape.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/QPen \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/QBrush \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/QLabel \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtWidgets/qlabel.h \
+		/home/girish-v-b/Qt/6.9.0/gcc_64/include/QtGui/qpicture.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../../mainwindow.cpp
 
 moc_Shape.o: moc_Shape.cpp 
